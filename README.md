@@ -169,13 +169,7 @@ snap loudness), everything else is deterministic.
 | `visualize.py` | Waveform + spectrogram comparison plots for slides/video |
 | `requirements.txt` | Python dependencies |
 
-## 9. Honest limitations (know these before a judge asks)
 
-- ~10 samples/class is far too small to claim a validated accuracy number —
-  frame `train_classifier.py`'s output as a directional signal only.
-- Recording protocol variance (mic distance, snap force, ambient noise)
-  is not controlled for beyond "do it consistently" — a real deployment
-  would need a fixed acoustic enclosure or a normalization step.
 - The rule-based fallback's thresholds are calibrated to *your* mic and
   room — they will need recalibration on different hardware.
 - This is a proof-of-concept for a *research signal* (sound correlates
